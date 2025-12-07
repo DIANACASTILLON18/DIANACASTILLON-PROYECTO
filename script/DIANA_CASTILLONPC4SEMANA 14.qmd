@@ -1,0 +1,50 @@
+---
+title: "DIANA_CASTILLONPC4SEMANA14"
+author: "DIANA CASTILLON HUAMAN"
+format: html
+editor: visual
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## SEMANA 14 - Realiza el análisis de Regresión , Análisis univariado , Multivariado
+
+```{r}
+#a) Regresión lineal simple (EDAD → CDAI)
+#1.- Creamos el modelo y ejecutamos 
+#2 Vemos al costado parte derecha esta modelo_simple
+```
+
+```{r}
+data <- read_csv("C:/Users/USER/Downloads/s02_treat_artritis.csv")
+
+data_limpia<-data[!is.na(data$CDAI),]
+
+modelo_simple <-lm(CDAI ~ Edad, data = data)
+```
+
+```{r}
+#3 Vemos los resultados
+summary(modelo_simple)
+```
+
+```{r}
+#b) Regresión múltiple
+#1. Crearemos el modelo y ejecutamos
+#2. Vemos al costado parte derecha esta modelo_multiple
+```
+
+```{r}
+data <- read_csv("C:/Users/USER/Downloads/s02_treat_artritis.csv")
+
+data_limpia<-data[!is.na(data$CDAI),]
+
+modelo_multiple <- lm(CDAI ~ Edad + Anios_Dx + Sexo, data = data)
+```
+
+```{r}
+#3 . Vemos los resultados
+summary(modelo_multiple)
+```
