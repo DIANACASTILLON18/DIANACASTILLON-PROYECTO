@@ -1,0 +1,38 @@
+---
+title: "DIANA_CASTILLONPC4SEMANA2"
+author: "DIANA CASTILLON HUAMAN"
+format: html
+editor: visual
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## SEMANA 2
+
+## Como crear un proyecto en Rstudio
+
+```{r}
+#1 . En la parte superior derecha : Seleccionamos New Projet
+```
+
+```{r}
+#2 . Seleccionamos nuevo directorio
+```
+
+```{r}
+#3 . Seleccionamos Nuevo Proyecto
+```
+
+```{r}
+#4 . Ubicar proyecto
+```
+
+```{r}
+#5 . Seleccionar la carpeta a guardar
+```
+
+```{r}
+#6 . Visualizamos el proyecto
+```
