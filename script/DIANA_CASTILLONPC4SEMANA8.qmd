@@ -1,0 +1,36 @@
+---
+title: "DIANA_CASTILLONPC4SEMANA8"
+author: "DIANA CASTILLON HUAMAN"
+format: html
+editor: visual
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## SEMANA 8 - Como instalar un paquete en Rstudio - Realiza tu gráfico estadístico ( Histograma )
+
+1\. Instalaremos el paquete de ( nnet ) , le daremos click ahora para poder instalarlo
+
+```{r}
+install.packages("nnet")
+```
+
+2\. Haremos click aquí para cargar el paquete
+
+```{r}
+library(nnet)
+```
+
+3\. Nos iremos a Packages para ver si esta instalado y podemos ver que si esta instalado
+
+## Histograma
+
+1.- Ponemos estos algoritmos , le damos enter y podemos observar el histograma , usamos ( CDAI )
+
+```{r}
+# HISTOGRAMA
+hist(data$CDAI)
+hist(data$CDAI , col = "red")
+```
