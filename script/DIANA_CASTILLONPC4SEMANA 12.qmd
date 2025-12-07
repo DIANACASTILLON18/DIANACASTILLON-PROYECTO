@@ -1,0 +1,49 @@
+---
+title: "DIANA_CASTILLONPC4SEMANA12"
+author: "DIANA CASTILLON HUAMAN"
+format: html
+editor: visual
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## SEMANA 12
+
+Calcular las Medidas de Dispersión ( varianza , Desviación estándar , Rango , Rango intercuartílico ) y de Posición ( cuartiles ) , y visualizar también las 6 primeras filas ( usare la EDAD)
+
+**MEDIDAS DE DISPERSIÓN**
+
+```{r}
+#VARIANZA
+var(data$Edad,na.rm = TRUE)
+```
+
+```{r}
+#DESVIACIÓN ESTANDAR
+sd(data$Edad,na.rm = TRUE)
+```
+
+```{r}
+#RANGO
+range(data$Edad,na.rm = TRUE)
+```
+
+```{r}
+
+#RANGO INTERCUARTILICO
+IQR(data$Edad,na.rm = TRUE)
+```
+
+**MEDIDAS DE POSICIÓN**
+
+```{r}
+#CUARTIL
+quantile(data$Edad,probs = c(0.25,0.5,0.75,0.90), na.rm = TRUE)
+```
+
+```{r}
+#VER LAS 6 PRIMERAS FILAS
+head(data$Edad)
+```
