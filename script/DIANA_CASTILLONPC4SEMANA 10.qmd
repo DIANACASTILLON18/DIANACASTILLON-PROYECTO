@@ -1,0 +1,30 @@
+---
+title: "DIANA_CASTILLONPC4SEMANA10"
+author: "DIANA CASTILLON HUAMAN"
+format: html
+editor: visual
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## SEMANA 10
+
+Calcular las Medidas de Tendencia Central ( media aritmética , Mediana , Moda ) en este caso lo voy hacer con Edad
+
+```{r}
+#MEDIA ARITMETICA
+mean(data$Edad)
+```
+
+```{r}
+
+#MEDIANA
+median(data$Edad)
+```
+
+```{r}
+#MODA
+mode_Edad<-names(sort(table(data$Edad), decreasing = TRUE))
+```
