@@ -1,0 +1,36 @@
+---
+title: "DIANA_CASTILLONPC4SEMANA4"
+author: "DIANA CASTILLON HUAMAN"
+format: html
+editor: visual
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## SEMANA 4 - Como descargar un archivo en formato CSV del repositorio GITHUB
+
+```{r}
+#1 . Primero no vamos a la guía practica para que nos lleve al enlace
+```
+
+```{r}
+#2 . Damos click donde dice DATA
+```
+
+```{r}
+#3 . Descargaremos s02_treat_artritis_csv
+```
+
+```{r}
+#4 . Visualizamos para poder descargarlo
+```
+
+```{r}
+#5 . Listo ya esta descargado
+```
+
+```{r}
+data<- read.csv("C:/Users/USER/Downloads/s02_treat_artritis.csv")
+```
