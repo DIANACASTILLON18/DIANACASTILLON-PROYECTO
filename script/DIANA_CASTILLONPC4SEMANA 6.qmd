@@ -1,0 +1,49 @@
+---
+title: "DIANA_CASTILLONPC4SEMANA6"
+author: "DIANA CASTILLON HUAMAN"
+format: html
+editor: visual
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## SEMANA 6
+
+## Como limpiar una data para utilizar una columna especifica 
+
+```{r}
+#1 Importamos la data (import Dataset)
+```
+
+```{r}
+#2 Solo copiamos esa parte y damos click en import
+```
+
+```{r}
+#3 Lo pegamos y damos Enter para que nos aparezca la data
+```
+
+```{r}
+# CARGANDO LA DATA A TRABAJAR
+
+data<- read.csv("C:/Users/USER/Downloads/s02_treat_artritis.csv")
+```
+
+```{r}
+#4 Como vemos ya nos salió la data al costado ( parte derecha )
+```
+
+```{r}
+#5. Lo que vamos hacer es limpiar la columna CDAI (NA)
+```
+
+```{r}
+#6 Ponemos esos algoritmos , le damos enter y vemos que en la parte de al costado (parte derecha) ya nos dice data_limpia de la columna (CDAI)
+```
+
+```{r}
+#LIMPIAR LA DATA DE UNA COLUMNA ESPECIFIFCA , QUE CONTENGAN DATOS PERDIDOS
+data_limpia<-data[!is.na(data$CDAI),]
+```
